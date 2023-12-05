@@ -3,6 +3,7 @@ import SlimSelect from "slim-select";
 import { fetchBreeds, fetchCatByBreed } from './cat-api';
 
 const container = document.querySelector('.breed-select');
+console.log(container);
 const load = document.querySelector('.loader');
 const error = document.querySelector('.error');
 const catInfo = document.querySelector('.cat-info');
@@ -54,3 +55,5 @@ fetchBreeds()
             Notiflix.Report.failure('Oops! Something went wrong! Try reloading the page!');
         });
     }
+
+    
