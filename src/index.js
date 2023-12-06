@@ -38,6 +38,7 @@ container.addEventListener('change', handleChange);
 
 function handleChange() {
     
+    catInfo.innerHTML = '';
     const selectedBreed = this.value;
 
 

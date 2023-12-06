@@ -17,6 +17,9 @@ function fetchCatByBreed(breedId) {
             Notiflix.Loading.hourglass('Завантаження'); 
             return response.data
         })
+        .finally(()=>{
+            Notiflix.Loading.remove();
+        } )
         
 }
 
